@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LojaTech</title>
+    <link rel="stylesheet" href="./css/relatorio.css">
+    <script src="index.js"></script>
+  </head>
+
+  <body></body>
+    <!--Navbar-->
+    <nav>
+      <div id="nav1">
+        <div id="nav11">
+          <a href="./">
+          <img src="/assets/fex.png" id="logo">
+          </a>
+        </div>
+        <div id="nav12">
+          <input type="text" id="pesquisa" placeholder="Pesquisar">
+        </div>
+      </div>
+      <div id="nav2">
+        <p>Cabos / Variedades / Conexões / Pendrive</p>
+      </div>
+    </nav>
+    <!--flex da pagina depois do navbar-->
+    <div class="bodypage">
+      <div id="conteudo">
+      <div id="titulo">
+        <h1>Relatório da compra:</h1>
+      </div>
+      <!--Grupo de exibição dos dados-->
+      <div id="dados">
+        <!--Grupo interno do sub total-->
+        <div id="subtotal">
+          <h2 id="nome1">Nome do produto</h2>
+          <p id="estoque1">Estoque:</p>
+          <p id="preco1">Preço Base:</p>
+          <p id="quantidade1">Quantidade comprada:</p>
+          <p id="sub-total1">Sub-Total:</p>
+        </div>
+        <!--Grupo interno do total-->
+        <div id="total">
+          <h2>Total</h2>
+          <p id="estoque-final">Estoque Produto:</p>
+          <p id="quantidade-final">Quantidade comprada</p>
+          <p id="valor-total">Valor total</p>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!--Rodape vazio de vagabundo, so porque sim-->
+    <div class="rodape"></div>
+    <!--Script Puxando relatorio.js-->
+    <script src="../js/relatorio.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+body {
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 150px;
+
+  margin: 0 auto;
+}
+
+nav a {
+  display: block;
+}
+
+#nav1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #101010;
+
+  width: 100%;
+  height: 70%;
+  margin-top: -15px;
+}
+
+#nav11 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 5%;
+}
+
+#pesquisa {
+  width: 250px;
+  height: 35px;
+
+  border: none;
+  border-radius: 30px;
+  padding: 7px;
+
+  margin-bottom: -10px;
+}
+
+#nav12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 95%;
+  padding: 10px;
+}
+
+#nav2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 40%;
+  background-color: #161616;
+}
+
+#nav2 p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#logo {
+  width: 120px;
+  padding: 15px;
+}
+
+.bodypage {
+  margin: 0 auto;
+  padding: 30px 150px 30px 150px;
+
+  background-color: #cdcdcd;
+}
+
+#conteudo {
+  border: solid black 10px;
+  border-radius: 50px;
+  padding: 0 40px;
+}
+
+#titulo {
+  width: 100%;
+  font-size: 240%;
+}
+
+#dados {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 250%;
+}

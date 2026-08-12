@@ -1,0 +1,246 @@
+body {
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  color: white;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 150px;
+
+  margin: 0 auto;
+}
+
+#nav1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #101010;
+
+  width: 100%;
+  height: 70%;
+  margin-top: -15px;
+}
+
+#nav11 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 5%;
+}
+
+#pesquisa {
+  width: 250px;
+  height: 35px;
+
+  border: none;
+  border-radius: 30px;
+  padding: 7px;
+
+  margin-bottom: -10px;
+}
+
+#nav12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 95%;
+  padding: 10px;
+}
+
+#nav2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 40%;
+  background-color: #161616;
+}
+
+#nav2 p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#logo {
+  width: 120px;
+  padding: 15px;
+}
+
+.bodypage {
+  width: 100%;
+  background-color: white;
+}
+
+.compra {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin: 30px 200px 30px 200px;
+  padding-top: 60px;
+  gap: 15px;
+
+  background-color: white;
+}
+
+#flex_img {
+  width: 500px;
+}
+#flex_img img {
+  width: 100%;
+}
+
+.text_compra {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 500px;
+}
+
+#flex_text {
+  width: 60%;
+  height: 100%;
+  padding: 10px 50px 10px 20px;
+  border-left: solid 1px black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#descricao {
+  margin-top: -10px;
+}
+
+#text_flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#comprar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 40%;
+}
+
+#real,
+#decimal {
+  font-size: 0.6em;
+  vertical-align: super;
+  line-height: -1;
+  top: -0.3em;
+  position: relative;
+}
+
+#precoin {
+  font-size: 35px;
+}
+
+#aproveite {
+  font-size: 20px;
+  color: green;
+}
+
+#estoque {
+  margin-top: -10px;
+}
+
+fieldset {
+  width: 100%;
+  height: 450px;
+}
+
+#butcomprar {
+  display: flex;
+  margin-top: 50px;
+  background-color: brown;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+}
+
+#campoInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 100px;
+}
+
+#quant {
+  margin-right: -50px;
+}
+
+#queroalinharmaisnaoda {
+  border: solid 1px black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 50px;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-right: -50px;
+}
+
+#campoInput button,
+#campoInput input {
+  background: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+.maismenos {
+  width: 50px;
+  height: 50px;
+}
+
+#menos {
+  border-radius: 10px 0 0 10px;
+}
+
+#mais {
+  border-radius: 0px 10px 10px 0px;
+}
+
+#campoInput button {
+  background-color: red;
+}
+#campoInput input {
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+}

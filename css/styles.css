@@ -1,0 +1,164 @@
+body {
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  color: white;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 150px;
+
+  margin: 0 auto;
+}
+
+nav a {
+  display: block;
+  width: 600px;
+  margin-right: -100px;
+}
+
+#nav1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #101010;
+
+  width: 100%;
+  height: 70%;
+  margin-top: -15px;
+}
+
+#nav11 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 5%;
+}
+
+#pesquisa {
+  width: 250px;
+  height: 35px;
+
+  border: none;
+  border-radius: 30px;
+  padding: 7px;
+
+  margin-bottom: -10px;
+}
+
+#nav12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 95%;
+  padding: 10px;
+}
+
+#nav2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 40%;
+  background-color: #161616;
+}
+
+#nav2 p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#logo {
+  width: 120px;
+  padding: 15px;
+}
+
+.bodypage {
+  margin: 0 auto;
+  padding: 30px 150px 30px 150px;
+
+  background-color: #cdcdcd;
+}
+
+.Produtos {
+  background-color: #03bb85;
+  height: 200vh;
+
+  padding: 10px;
+  border-radius: 8px;
+  background: linear-gradient(to bottom, #03bb85, transparent 350px);
+
+  margin: 0 auto;
+}
+
+.Produtos_ {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding: 15px;
+  margin-top: -30px;
+  gap: 10px;
+}
+
+.prod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+  padding: 10px;
+  width: 110px;
+  height: 150px;
+
+  border-radius: 8px;
+
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3 ease;
+}
+
+.prod:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.prod img {
+  width: 90px;
+  height: 90px;
+
+  border-radius: 8px;
+}
+
+.prod a {
+  display: block;
+}
+
+.prod a h2 {
+  margin-top: -3px;
+  text-align: start;
+}
+
+.prod a h3 {
+  margin-top: -15px;
+  text-align: start;
+}
