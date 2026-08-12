@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LojaTech</title>
+    <title>LojaTech - Compra</title>
     <link rel="stylesheet" href="./css/compra.css" />
     <script src="index.js"></script>
   </head>
 
-  <body></body>
+  <body>
     <!--Navbar-->
     <nav>
       <div id="nav1">
         <div id="nav11">
           <a href="index.html">
-          <img src="/assets/fex.png" id="logo">
+            <img src="./assets/fex.png" id="logo" alt="Logo LojaTech">
           </a>
         </div>
         <div id="nav12">
@@ -25,53 +25,52 @@
         <p>Cabos / Variedades / Conexões / Pendrive</p>
       </div>
     </nav>
-    <!--flex da pagina depois do navbar-->
-    <div class="bodypage">
-    <div class="compra">
 
-      <div class="img_compra">
-        <div id="flex_img">
-          <img id="imagem">
+    <!--Corpo da página-->
+    <div class="bodypage">
+      <div class="compra">
+        
+        <div class="img_compra">
+          <div id="flex_img">
+            <img id="imagem" alt="Imagem do produto">
+          </div>
+        </div>
+
+        <div class="text_compra">
+          <div id="flex_text">
+            <h1 id="nome">Nome do Produto</h1>
+            <h4 id="descricao">Descrição do produto</h4>
+          </div>
+
+          <div id="comprar">
+            <fieldset>
+              <h2 id="preco">
+                <span id="real">R$</span><span id="precoin">00</span><span id="decimal">,99</span>
+              </h2>
+              <h2 id="aproveite">Aproveite e compre o seu agora que ainda tem estoque!</h2>
+              <h3 id="estoque">Estoque disponível</h3>
+              
+              <!--Input da quantidade-->
+              <div id="campoInput">
+                <label for="inputValor">Quantidade desejada:</label>
+                <div id="queroalinharmaisnaoda">
+                  <button type="button" onclick="alterarValor(-1)" class="maismenos" id="menos">-</button>
+                  <input type="number" name="quant" id="inputValor" value="1" min="1" onchange="validarLimite()">
+                  <button type="button" onclick="alterarValor(1)" class="maismenos" id="mais">+</button>
+                </div>
+              </div>
+           
+              <div id="text_flex">
+                <a href="relatorio.html" onclick="comprar()" id="butcomprar">Comprar</a>
+              </div>
+            </fieldset>
+          </div>
+
         </div>
       </div>
-      <div class="text_compra">
-        <div id="flex_text">
-          <h1 id="nome">nome</h1>
-          <h4 id="descricao">descricao</h4>
-        </div>
-        <div id="comprar">
-          <fieldset>
-            
-            <h2 id="preco"><span id="real">R$</span><span id="precoin"></span><span id="decimal">99</span></h2>
-            <h2 id="aproveite">Aproveite e compre o seu agora que ainda tem estoque!</h2>
-            <h3 id="estoque">estoque</h3>
-            <!--Input da quantidade que o usuario deseja comprar-->
-            
-          <div id="campoInput">
-            <label for="quant" id="quant">Quantidade desejada:</label>
-            <div id="queroalinharmaisnaoda">
-            <button onclick="alterarValor(-1)" class="maismenos" id="menos">-</button>
-          <input type="number" name="quant" id="inputValor" value="0" onchange="validarLimite()">
-          <button onclick="alterarValor(1)" class="maismenos" id="mais">+</button>
-          </div>
-          </div>
-         
-          <div id="text_flex">
-            <a href="relatorio.html" onclick="comprar()" id="butcomprar">
-              Comprar
-            </a>
-          </fieldset>
-        </div>
-            
-          
-        </div>
-      </div>
-    </div>
     </div>
 
     <div class="rodape"></div>
-    <script src="./js/compra.js">
-      
-    </script>
+    <script src="./js/compra.js"></script>
   </body>
 </html>
