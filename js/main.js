@@ -1,7 +1,7 @@
-// Leitores que reconhecem quando o link/produto é clicado
+//Leitores que reconhecem quando o link/produto é clicado
 document.getElementById("hdmi").addEventListener("click", function () {
   salvarProduto(
-    "./assets/caboHDMI.webp",
+    "assets/caboHDMI.webp",
     "Cabo HDMI",
     25,
     30,
@@ -11,7 +11,7 @@ document.getElementById("hdmi").addEventListener("click", function () {
 
 document.getElementById("rede").addEventListener("click", function () {
   salvarProduto(
-    "./assets/caboRede.webp",
+    "assets/caboRede.webp",
     "Cabo de Rede",
     15,
     50,
@@ -21,7 +21,7 @@ document.getElementById("rede").addEventListener("click", function () {
 
 document.getElementById("pendrive").addEventListener("click", function () {
   salvarProduto(
-    "./assets/pendrive.webp",
+    "assets/pendrive.webp",
     "Pendrive 32GB",
     40,
     20,
@@ -31,17 +31,17 @@ document.getElementById("pendrive").addEventListener("click", function () {
 
 document.getElementById("energia").addEventListener("click", function () {
   salvarProduto(
-    "./assets/energia.webp",
+    "assets/energia.webp",
     "Cabo de Energia",
     20,
     35,
-    "Garanta a segurança e o funcionamento contínuo dos seus principais eletrodomésticos e eletrônicos com este cabo de energia robusto, desenvolvido sob rigorosos padrões de segurança técnica para suportar variações de carga sem aquecer ou apresentar falhas de condução. Ideal para computadores, monitores, impressoras e panelas elétricas que utilizam o padrão correspondente, ele possui revestimento em PVC reforçado com excelente flexibilidade e conectores perfeitamente moldados que evitam o mau contato, protegendo seu investimento e assegurando que seus aparelhos recebam uma alimentação elétrica limpa e constante."
+    "Garanta a segurança e o funcionamento contínuo dos seus principais eletrodomésticos e eletrônicos com este cabo de energia robusto, desenvolvido sob rigorosos padrões de segurança técnica para suportar variações de carga sem aquecer ou apresentar falhas de condução. Ideal para computadores, monitores, impressoras e panelas elétricas que utilizam o padrão correspondente, ele possui revestimento em PVC reforçado com excelente flexibilidade e conectores perfeitamente moldados que evitam o mau contato, protegendo seu investmento e assegurando que seus aparelhos recebam uma alimentação elétrica limpa e constante."
   );
 });
 
 document.getElementById("vga").addEventListener("click", function () {
   salvarProduto(
-    "./assets/vga.webp",
+    "assets/vga.webp",
     "Cabo VGA",
     35,
     14,
@@ -51,7 +51,7 @@ document.getElementById("vga").addEventListener("click", function () {
 
 document.getElementById("usbc").addEventListener("click", function () {
   salvarProduto(
-    "./assets/usbc.webp",
+    "assets/usbc.webp",
     "Cabo USB-C",
     55,
     80,
@@ -61,7 +61,7 @@ document.getElementById("usbc").addEventListener("click", function () {
 
 document.getElementById("p2").addEventListener("click", function () {
   salvarProduto(
-    "./assets/p2.webp",
+    "assets/p2.webp",
     "Cabo P2",
     15,
     22,
@@ -71,7 +71,7 @@ document.getElementById("p2").addEventListener("click", function () {
 
 document.getElementById("ps2").addEventListener("click", function () {
   salvarProduto(
-    "./assets/ps2.webp",
+    "assets/ps2.webp",
     "Cabo PS/2",
     40,
     5,
@@ -79,7 +79,7 @@ document.getElementById("ps2").addEventListener("click", function () {
   );
 });
 
-// Função que armazena os dados dos produtos no armazenamento local
+//função que armazena os dados dos produtos no armazenamento local
 function salvarProduto(img, nome, preco, estoque, descricao) {
   localStorage.setItem("prod_img", img);
   localStorage.setItem("prod_nome", nome);
