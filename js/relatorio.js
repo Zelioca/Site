@@ -1,54 +1,50 @@
-// Obtém as informações salvas no armazenamento local após a página ser carregada
+//obtem as informaçoes salvas no armazenamento local apos a pagina ser carregada
 window.onload = function () {
   const nome = localStorage.getItem("prod_nome");
   const preco = localStorage.getItem("prod_preco");
   const estoque = localStorage.getItem("prod_estoque");
   const quantidade = localStorage.getItem("prod_quantidade");
+  const subTotal = parseInt(quantidade) * parseFloat(preco);
+  const estoqueFinal = parseInt(estoque) - parseInt(quantidade);
 
-  // Converte os valores para números com segurança (caso venham vazios, assume 0)
-  const numPreco = parseFloat(preco) || 0;
-  const numEstoque = parseInt(estoque) || 0;
-  const numQuantidade = parseInt(quantidade) || 0;
-
-  // Realiza os cálculos matemáticos
-  const subTotal = numQuantidade * numPreco;
-  const estoqueFinal = numEstoque - numQuantidade;
-
-  // Parte da seção SubTotal
-  if (nome !== null) {
+  //Verifica se as variaveis nao sao vazias, se verdadeiro, muda os valores para os dados locais
+  //Parte da seção SubTotal
+  if (nome) {
     document.getElementById("nome1").textContent = nome;
   }
 
-  if (preco !== null) {
+  if (preco) {
     document.getElementById("preco1").textContent =
-      "Valor Unitário: R$ " + numPreco.toFixed(2);
+      "Valor Unitario: R$ " + preco + ".00";
   }
 
-  if (estoque !== null) {
+  if (estoque) {
     document.getElementById("estoque1").textContent =
-      "Estoque Inicial: " + numEstoque + " unidades";
+      "Estoque: " + estoque + " unidades";
   }
 
   if (quantidade !== null) {
     document.getElementById("quantidade1").textContent =
-      "Quantidade: " + numQuantidade + " unidades";
+      "Quantidade: " + quantidade + " unidades ";
   }
-  
-  document.getElementById("sub-total1").textContent =
-    "Sub-Total: R$ " + subTotal.toFixed(2);
+  if (!isNaN(subTotal)) {
+    document.getElementById("sub-total1").textContent =
+      "Sub Total: R$ " + subTotal + ".00";
+  }
 
-  // Parte da seção Total
-  // Aqui usamos !== null para aceitar o número 0 quando o estoque zerar
-  if (estoque !== null && quantidade !== null) {
+  //Parte da seção Total
+  if (!isNaN(estoqueFinal)) {
     document.getElementById("estoque-final").textContent =
       "Estoque Restante: " + estoqueFinal + " unidades";
   }
 
   if (quantidade !== null) {
     document.getElementById("quantidade-final").textContent =
-      "Quantia Total: " + numQuantidade + " unidades";
+      "Quantia Total: " + quantidade + " unidades";
   }
 
-  document.getElementById("valor-total").textContent =
-    "Valor Total: R$ " + subTotal.toFixed(2);
+  if (!isNaN(subTotal)) {
+    document.getElementById("valor-total").textContent =
+      "Valor Total: R$" + subTotal + ".00";
+  }
 };
