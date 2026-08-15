@@ -14,6 +14,8 @@ p {
   color: white;
 }
 
+/* Nav. Barra de navegação*/
+
 nav {
   display: flex;
   flex-direction: column;
@@ -28,9 +30,11 @@ nav {
 
 nav a {
   display: block;
-  width: 600px;
-  margin-right: -100px;
+  width: auto;
+  margin-right: 0;
 }
+
+/*Primeiro flex da barra de navegação (barra superior)*/
 
 #nav1 {
   display: flex;
@@ -71,6 +75,8 @@ nav a {
   padding: 10px;
 }
 
+/*Segundo flex da barra de navegação (barra inferior)*/
+
 #nav2 {
   display: flex;
   align-items: center;
@@ -91,6 +97,8 @@ nav a {
   padding: 15px;
 }
 
+/*Corpo da página/site */
+
 .bodypage {
   margin: 0 auto;
   padding: 30px 150px 30px 150px;
@@ -98,9 +106,11 @@ nav a {
   background-color: #cdcdcd;
 }
 
+/* Conteiner dos produtos */
+
 .Produtos {
   background-color: #03bb85;
-  height: 200vh;
+  height: 100vh;
 
   padding: 10px;
   border-radius: 8px;
@@ -108,6 +118,8 @@ nav a {
 
   margin: 0 auto;
 }
+
+/* Conteiner dos produtos (flex)*/
 
 .Produtos_ {
   display: flex;
@@ -118,6 +130,8 @@ nav a {
   margin-top: -30px;
   gap: 10px;
 }
+
+/* Classe padrão de cada produto */
 
 .prod {
   display: flex;
@@ -134,7 +148,7 @@ nav a {
 
   font-size: 12px;
   cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3 ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .prod:hover {
@@ -161,4 +175,25 @@ nav a {
 .prod a h3 {
   margin-top: -15px;
   text-align: start;
+}
+
+/* Conteiner do rodapé */
+
+.rodape {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  background-color: #161616;
+  color: white;
+
+  padding: 50px;
+}
+
+.rodape a {
+  color: white;
+}
+
+.rodape img {
+  width: 20%;
 }
