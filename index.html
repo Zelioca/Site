@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LojaTech</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
   </head>
 
   <body>
@@ -14,7 +14,7 @@
       <div id="nav1">
         <div id="nav11">
           <a href="index.html">
-            <img src="./assets/fex.png" id="logo" alt="Logo LojaTech">
+            <img src="assets/fex.png" id="logo" alt="Logo LojaTech">
           </a>
         </div>
         <div id="nav12">
@@ -29,81 +29,95 @@
 
     <!--Corpo da página-->
     <div class="bodypage">
-      <div class="Produtos">
+    <!--flex da pagina depois do navbar-->
+    <div class="Produtos">
+        <!--class para o produto determinado, id para a imagem e as variáveis-->
+        
         <div id="ofertas">
           <h1>Ofertas do dia!</h1>
         </div>
-        
-        <div class="Produtos_">
-          <!--PRODUTO 1-->
-          <div class="prod" id="prod1">
-            <a href="compra.html" id="hdmi">
-              <img src="./assets/caboHDMI.webp" alt="Cabo HDMI">
-              <h2>Cabo HDMI</h2>
-              <h3>R$25</h3>
-            </a>  
-          </div>
-          <!--PRODUTO 2-->
-          <div class="prod" id="prod2">
-            <a href="compra.html" id="rede">
-              <img src="./assets/caboRede.webp" alt="Cabo LAN">
-              <h2>Cabo LAN</h2>
-              <h3>R$15</h3>
-            </a>  
-          </div>
-          <!--PRODUTO 3-->
-          <div class="prod" id="prod3">
-            <a href="compra.html" id="pendrive">
-              <img src="./assets/pendrive.webp" alt="Pendrive Sandisk">
-              <h2>Pendrive Sandisk</h2>
-              <h3>R$40</h3>
-            </a>
-          </div>
-          <!--PRODUTO 4-->
-          <div class="prod" id="prod4">
-            <a href="compra.html" id="energia">
-              <img src="./assets/energia.webp" alt="Cabo de Energia">
-              <h2>Cabo de Energia</h2>
-              <h3>R$20</h3>
-            </a>
-          </div>
+       <div class="Produtos_" >
+        <!--PRODUTO 1-->
+      <div class="prod" id="prod1">
+        <a href="compra.html" id="hdmi">
+          <img src="assets/caboHDMI.webp">
+          <h2>Cabo HDMI</h2>
+          <h3>R$25</h3>
+        </a>  
+      </div>
+      <!--PRODUTO 2-->
+      <div class="prod" id="prod2">
+        <a href="compra.html" id="rede">
+          <img src="assets/caboRede.webp">
+          <h2>Cabo LAN</h2>
+          <h3>R$15</h3>
+        </a>  
+           
+      </div>
+      <!--PRODUTO 3-->
+      <div class="prod" id="prod3">
+        <a href="compra.html" id="pendrive">
+          <img src="assets/pendrive.webp">
+          <h2>Pendrive Sandisk</h2>
+          <h3>R$40</h3>
+        </a>
+      </div>
+      <!--PRODUTO 4-->
+      <div class="prod" id="prod4">
+        <a href="compra.html" id="energia">
+          <img src="assets/energia.webp">
+          <h2>Cabo de Energia</h2>
+          <h3>R$20</h3>
+        </a>
+      </div>
           <!--PRODUTO 5-->
-          <div class="prod" id="prod5">
-            <a href="compra.html" id="vga">
-              <img src="./assets/vga.webp" alt="Cabo VGA">
-              <h2>Cabo VGA</h2>
-              <h3>R$35</h3>
-            </a>
-          </div>
-          <!--PRODUTO 6-->
-          <div class="prod" id="prod6">
-            <a href="compra.html" id="usbc">
-              <img src="./assets/usbc.webp" alt="Cabo USB-C">
-              <h2>Cabo USB-C</h2>
-              <h3>R$55</h3>
-            </a>
-          </div>
-          <!--PRODUTO 7-->
-          <div class="prod" id="prod7">
-            <a href="compra.html" id="p2">
-              <img src="./assets/p2.webp" alt="Cabo P2">
-              <h2>Cabo P2</h2>
-              <h3>R$15</h3>
-            </a>
-          </div>
-          <!--PRODUTO 8-->
-          <div class="prod" id="prod8">
-            <a href="compra.html" id="ps2">
-              <img src="./assets/ps2.webp" alt="Cabo PS/2">
-              <h2>Cabo PS/2</h2>
-              <h3>R$40</h3>
-            </a>
-          </div>
-        </div>
+      <div class="prod" id="prod5">
+        <a href="compra.html" id="vga">
+          <img src="assets/vga.webp">
+          <h2>Cabo VGA</h2>
+          <h3>R$35</h3>
+        </a>
+      </div>
+<!--PRODUTO 6-->
+      <div class="prod" id="prod6">
+        <a href="compra.html" id="usbc">
+          <img src="assets/usbc.webp">
+          <h2>Cabo USB-C</h2>
+          <h3>R$55</h3>
+        </a>
+      </div>
+<!--PRODUTO 7-->
+      <div class="prod" id="prod7">
+        <a href="compra.html" id="p2">
+          <img src="assets/p2.webp">
+          <h2>Cabo P2</h2>
+          <h3>R$15</h3>
+        </a>
+      </div>
+<!--PRODUTO 8-->
+      <div class="prod" id="prod8">
+        <a href="compra.html" id="ps2">
+          <img src="assets/ps2.webp">
+          <h2>Cabo PS/2</h2>
+          <h3>R$40</h3>
+        </a>
       </div>
     </div>
-
-    <div class="rodape"></div>
-    <script src="./js/main.js"></script>
+    </div>
+</div>
+<!--Rodapé-->
+    <div class="rodape">
+        <img src="assets/fex.png">
+      <div id="desenvolvedores">
+        <h5>LojaTech Fex HiSaVa</h5>
+        <h6>Desenvolvido por:</h6>
+        <h6>Hiran Santos Número 12</h6>
+        <h6>Samuel Ferraz Número 28</h6>
+        <h6>Valentin Liscano Número 29</h6>
+      </div>
+      <div id="Comprar mais coisas">
+        <a href="index.html">Compre mais conosco!!</a>
+      </div>
+    </div>
   </body>
 </html>
