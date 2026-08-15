@@ -14,6 +14,8 @@ p {
   color: white;
 }
 
+/* Nav. Barra de navegação*/
+
 nav {
   display: flex;
   flex-direction: column;
@@ -25,6 +27,8 @@ nav {
 
   margin: 0 auto;
 }
+
+/*Primeiro flex da barra de navegação (barra superior)*/
 
 #nav1 {
   display: flex;
@@ -65,6 +69,8 @@ nav {
   padding: 10px;
 }
 
+/*Segundo flex da barra de navegação (barra inferior)*/
+
 #nav2 {
   display: flex;
   align-items: center;
@@ -85,10 +91,14 @@ nav {
   padding: 15px;
 }
 
+/*Corpo da página/site */
+
 .bodypage {
   width: 100%;
   background-color: white;
 }
+
+/* Conteiner (flex) do produto. Imagem e informação de compra */
 
 .compra {
   display: flex;
@@ -139,6 +149,8 @@ nav {
   align-items: center;
   justify-content: center;
 }
+
+/*fieldset para wuantidade e comprar*/
 
 #comprar {
   display: flex;
@@ -193,12 +205,12 @@ fieldset {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 180px;
+  width: 100%;
   height: 100px;
 }
 
 #quant {
-  margin-right: -50px;
+  margin-right: 0;
 }
 
 #queroalinharmaisnaoda {
@@ -211,7 +223,7 @@ fieldset {
   height: 50px;
   overflow: hidden;
   margin-top: 10px;
-  margin-right: -50px;
+  margin-right: 0;
 }
 
 #campoInput button,
@@ -243,4 +255,25 @@ fieldset {
   width: 100px;
   height: 50px;
   text-align: center;
+}
+
+/* Conteiner do rodapé */
+
+.rodape {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  background-color: #161616;
+  color: white;
+
+  padding: 50px;
+}
+
+.rodape a {
+  color: white;
+}
+
+.rodape img {
+  width: 20%;
 }
